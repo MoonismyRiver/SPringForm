@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Setting</h1>
+<p>
+    <a th:href="@{/product}">
+        Back to product list
+    </a>
+</p>
+<div id="form">
+<form action="">
+        <div>
+        <label>Language</label>
+        <select>
+            <option>English</option>
+            <option>Vietnamese</option>
+            <option>Japanese</option>
+            <option>Chinese</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label>Page Size</label>
+        Show
+        <select>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>25</option>
+            <option>50</option>
+            <option>100</option>
+        </select>
+        emails per page
+    </div>
+    <br>
+    <div>
+        <label>Signature :</label>
+       <input width="200px" >
+    </div>
+    <input type="submit" value="Update">
+</form>
+</div>
+
+</body>
+</html>
